@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1120px){
+    .hypeLogoCompleteHeader {
+        height: 80px;
+        margin-left: $marginLeft;
+        position: fixed;  
+    }
+    .article-detail {
+        background: rgba(0, 0, 0, 0.4);
+        margin-left: $marginLeft;
+        margin-right: $marginRight;
+    }
+
+    div {
+        .image {
+            img {
+                display: none;
+            }
+        }
+    }
+    #aboutPage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+}

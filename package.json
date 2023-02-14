@@ -1,0 +1,25 @@
+{
+  "name": "hypeba",
+  "version": "1.0.0",
+  "description": "HypeWebsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommaenhout/proyectoFinalCoderhouse.git"
+  },
+  "author": "Tom Maenhout",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tommaenhout/proyectoFinalCoderhouse/issues"
+  },
+  "homepage": "https://github.com/tommaenhout/proyectoFinalCoderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

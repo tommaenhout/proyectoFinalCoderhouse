@@ -1,0 +1,29 @@
+.yellowLine {
+    width: 5px;
+    height: 60px;
+    background-color: $secundary;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline; 
+    border-radius: 5px;
+    animation: lineGrow .5s ease-in-out;  
+}
+
+.containerWithLine {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.yellow {
+    background-color: $secundary;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    width: 14px;
+    height: 6px;
+    border-radius: 5px;
+    animation: lineGrowHorizontal .5s ease-in-out;
+}

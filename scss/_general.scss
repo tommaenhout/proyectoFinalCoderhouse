@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    line-height: 1.5;
+    background-color: #f5f5f5;
+    color: white
+}
+
+@mixin letterspacing($spacing) {
+    h1 {
+      letter-spacing: $spacing;
+    }
+    h2 {
+      letter-spacing: $spacing - 1;
+    }
+    h3 {
+        letter-spacing: $spacing - 1;
+    }
+    .spaced {
+        letter-spacing: $spacing;
+    }
+  }
+
+  @include letterspacing(5px);
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(2px) brightness(0.5);
+    z-index: -1;
+}
+
+.hypeLogoCompleteHeader {
+    height: 130px;
+    margin-left: $marginLeft;
+    margin-top: 10px;
+    position: fixed;
+}
+
+.whatsappLogoBottomRight{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    z-index: 1;
+    background-color: #03C100;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    a {
+        display: flex;
+    }
+    &:hover{
+        width: 62px;
+        height: 62px;
+        cursor: pointer;
+    }
+}
+
+
+li {
+    list-style: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: $secundary;
+    }
+}
+
+
+.onPage {
+    color: $secundary;
+    text-decoration: bold;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+} 
+
+.font600 {
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.font26 {
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.text {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px; 
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+input {
+    display: none;
+}
+
+header {
+    height: 150px;
+}
+
+.take100 {
+    height: 100%;
+}
+
+.inline {
+    display:inline;
+}
+
+.sectionFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.divButton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+
+}
+
+.width80 {
+    width: 80%;
+}
+
+.containerBlack {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px 60px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.marginTop {
+    margin-top: 150px;
+}

@@ -1,0 +1,44 @@
+@media only screen and (max-width: 920px){
+    .hypeLogoCompleteHeader {
+        height: 80px;
+        margin-left: $marginLeft;
+        position: fixed;  
+    }
+
+
+    .article-detail {
+        background: rgba(0, 0, 0, 0.4);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .article-detail img {
+        margin-bottom: 20px;
+    }
+
+    #aboutPage {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #carouselExampleAutoplaying {
+        display: none;
+    }
+
+    .article {
+        margin-right: 90px;
+    }
+
+    .articleDetails {
+        grid-template-areas: "summary summary" "text  text";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+    }
+    
+    .picture {
+        display:none;
+    }  
+
+}

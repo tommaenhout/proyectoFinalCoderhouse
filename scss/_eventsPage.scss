@@ -1,0 +1,78 @@
+.bgEventsPage
+{
+   background-image: url("../img/BgEventsPage.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+#eventsPage {
+   text-align: center;
+   a {
+    cursor: pointer;
+   }
+   div {
+        h1 {
+            margin-bottom: 20px;  
+        }
+   }
+}
+
+
+.tableContainer{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin: 0 80px;
+    padding: 20px;
+}
+  
+
+.rowEvent {
+    display: grid;
+    grid-template-areas: "day event tickets" "date event tickets";
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    width: 100%;
+    border-bottom: 5px solid $secundary;
+    padding: 10px 0;
+    animation: bordergrow 0.3s ease-in-out;
+}
+
+@keyframes bordergrow {
+    0% {
+        border-bottom: 0px solid transparent;
+    }
+
+    100% {
+        border-bottom: 5px solid $secundary;
+    }
+}
+
+
+
+.day {
+    grid-area: day;
+    border-right: 5px solid;
+    border-color: rgba(255, 239, 0,  0.3);
+    font-size: 1.2rem;
+}
+
+.date {
+    grid-area: date;
+    border-right: 5px solid;
+    border-color: rgba(255, 239, 0,  0.3);
+    padding-top: 10px;
+    font-size: 0.8rem;    
+}
+
+.event {
+    grid-area: event; 
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.tickets {
+    grid-area: tickets;  
+    align-self: center;
+   
+}

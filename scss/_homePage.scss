@@ -1,0 +1,36 @@
+#homePage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+        height: 400px;
+    }
+   
+}
+
+.homePageTextContainer {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px;
+    border-radius: 20px;
+    margin-right: $marginRight;
+    display: flex;
+    flex-direction: column;
+    p {
+        display: flex;
+    }
+}
+
+.homePageTextContainer {
+    h1 {
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+.first {
+    margin-left: $marginLeft;
+    display: flex;
+    justify-content: center;
+}

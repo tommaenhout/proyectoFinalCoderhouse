@@ -1,0 +1,38 @@
+.bgAboutPage
+{
+   background-image: url("../img/BgAboutPage.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+#aboutPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    article {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 60px;
+        border-radius: 20px;
+        margin-left: $marginLeft;
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 20px 0; 
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom : 20px;
+        }
+        div:first-of-type {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
