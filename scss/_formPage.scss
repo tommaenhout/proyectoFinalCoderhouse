@@ -1,0 +1,56 @@
+form {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    input {
+        display:block;
+        border: none;
+        border-bottom: 5px solid $secundary;
+        animation: bordergrow 0.3s ease-in-out;
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 30px;
+        color: white;
+        padding: 10px;
+        &:focus {
+            outline: none;
+            border: .5px solid $secundary;
+        }
+        &:autofill, &:autofill:hover, &:autofill:focus, &:autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+            -webkit-text-fill-color: white !important;
+        }
+    }
+    textarea {
+        display:block;
+        border: none;
+        border-bottom: 5px solid $secundary;
+        background: none;
+        width: 100%;
+        height: 100px;
+        color: white;
+        animation: bordergrow 0.3s ease-in-out;
+        padding: 10px;
+        &:focus {
+            outline: none;
+            border: .5px solid $secundary;
+
+        }
+    } 
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    input[type="submit"] {
+        justify-self: end;
+    }
+}
+
+
