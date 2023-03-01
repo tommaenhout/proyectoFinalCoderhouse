@@ -287,12 +287,20 @@ nav {
   100% {
     opacity: 1; } }
 
-.bgAboutPage {
-  background-image: url("../img/BgAboutPage.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; }
+.bgAboutPage:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("../img/BgAboutPage.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 #aboutPage {
   display: grid;
@@ -317,12 +325,20 @@ nav {
       display: flex;
       align-items: center; }
 
-.bgEventsPage {
-  background-image: url("../img/BgEventsPage.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; }
+.bgEventsPage:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("../img/BgEventsPage.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 #eventsPage {
   text-align: center; }
