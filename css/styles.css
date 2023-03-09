@@ -629,11 +629,6 @@ footer {
     display: none; } }
 
 @media only screen and (max-width: 786px) {
-  html {
-    overflow: hidden; }
-  body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
   .articleDetails {
     display: grid;
     grid-template-areas: "summary" "text";
